@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "SpongeBob",
+        "occupation": "Line Cook",
+        "department": "The Krusty Krab"
+    },
+    {
+        "id": 2,
+        "name": "Mr. Krabs",
+        "occupation": "General Manager",
+        "department": "The Krusty Krab"
+    },
+    {
+        "id": 3,
+        "name": "Squidward",
+        "occupation": "Cashier",
+        "department": "The Krusty Krab"
+    },
+    {
+        "id": 4,
+        "name": "Remy",
+        "occupation": "Executive Chef",
+        "department": "Gusteau's"
+    },
+    {
+        "id": 5,
+        "name": "Alfredo Linguini",
+        "occupation": "Line Cook",
+        "department": "Gusteau's"
+    },
+    {
+        "id": 6,
+        "name": "Bob Belcher",
+        "occupation": "Executive Chef",
+        "department": "Bob's Burgers"
+    }
+]

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
@@ -6,7 +7,9 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import { Paper } from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
+import employees from "../../../../employee-directory/";
+
 
 const useStyles = makeStyles({
     table: {
@@ -14,17 +17,17 @@ const useStyles = makeStyles({
     },
 });
 
-function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
+function createData(name, id, occupation, department) {
+    return { name, id, occupation, department };
 }
 
-const rows = [
-    createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-    createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-    createData('Eclair', 262, 16.0, 24, 6.0),
-    createData('Cupcake', 305, 3.7, 67, 4.3),
-    createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
+// function employeeArray(employees) {
+//     employees.map(employee => {
+
+//     })
+// }
+
+let rows = [];
 
 export default function SimpleTable() {
     const classes = useStyles();
@@ -34,11 +37,10 @@ export default function SimpleTable() {
             <Table className={classes.table} aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell>Dessert (100g serving)</TableCell>
-                        <TableCell align="right">Calories</TableCell>
-                        <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                        <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                        <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                        <TableCell align="left">Name</TableCell>
+                        <TableCell align="left">Employee ID</TableCell>
+                        <TableCell align="left">Occupation</TableCell>
+                        <TableCell align="left">Department</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
