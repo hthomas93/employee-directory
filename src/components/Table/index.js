@@ -1,5 +1,6 @@
 import React from 'react';
 import MaterialTable from 'material-table';
+import "./index.css";
 
 export default function MaterialTableDemo() {
     const [state, setState] = React.useState({
@@ -20,7 +21,7 @@ export default function MaterialTableDemo() {
 
     return (
         <MaterialTable
-            title="Employee Database"
+            title="Employee Database    "
             columns={state.columns}
             data={state.data}
             editable={{
