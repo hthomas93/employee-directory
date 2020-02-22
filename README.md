@@ -1,5 +1,7 @@
 ## Employee Directory
 ### A React App Using Materialize-UI
+Link to the deployed app:
+https://employee-directory-93.herokuapp.com/
 
 ## User Story
 AS AN HR director,
