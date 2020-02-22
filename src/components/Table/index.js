@@ -6,27 +6,21 @@ export default function MaterialTableDemo() {
         columns: [
             { title: 'Name', field: 'name' },
             { title: 'Surname', field: 'surname' },
-            { title: 'Birth Year', field: 'birthYear', type: 'numeric' },
-            {
-                title: 'Birth Place',
-                field: 'birthCity',
-                lookup: { 34: 'İstanbul', 63: 'Şanlıurfa' },
-            },
+            { title: 'Position', field: 'position' },
+            { title: 'Employee ID', field: `employeeID`, type: "numeric" },
         ],
         data: [
-            { name: 'Mehmet', surname: 'Baran', birthYear: 1987, birthCity: 63 },
-            {
-                name: 'Zerya Betül',
-                surname: 'Baran',
-                birthYear: 2017,
-                birthCity: 34,
-            },
+            { name: 'Mehmet', surname: 'Baran', position: "Engineer", employeeID: 64739 },
+            { name: 'Zerya Betül', surname: 'Baran', position: "Manager", employeeID: 76504 },
+            { name: 'Harrison', surname: 'Thomas', position: "Engineer", employeeID: 75933 },
+            { name: 'Bernie', surname: 'Sanders', position: "Intern", employeeID: 85736 },
+            { name: 'Tom', surname: 'Cruise', position: "Stunt Man", employeeID: 12345 },
         ],
     });
 
     return (
         <MaterialTable
-            title="Editable Example"
+            title="Employee Database"
             columns={state.columns}
             data={state.data}
             editable={{
